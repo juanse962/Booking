@@ -1,4 +1,4 @@
-Feature: Automation of web Discover Colombia
+Feature: Automation of car rentals
 
   @smoke
   Scenario: Enter the site and look for the rent a car option.

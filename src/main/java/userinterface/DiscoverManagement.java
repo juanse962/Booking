@@ -12,8 +12,8 @@ public class DiscoverManagement {
             .locatedBy("//span[contains(text(),'Explore Colombia')]");
     public static final Target START_DATE = Target.the("Fecha de inicio")
             .locatedBy("//form[@id='frm']/div[3]//div[2]//div[3]/div[1]//tr[4]/td[2]");
-    public static final Target CHANGE_CURRENCY = Target.the("Fecha de inicio")
+    public static final Target CHANGE_CURRENCY = Target.the("Hace click en el boton cambio de moneda")
             .locatedBy(".bui-group--vertical-align-middle > div:nth-child(1) > button");
-    public static final Target CHANGE_USD = Target.the("Fecha de inicio")
+    public static final Target CHANGE_USD = Target.the("Hace click en USD")
             .locatedBy("//div[contains(text(),'USD')]");
 }

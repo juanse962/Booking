@@ -1,7 +1,7 @@
-Feature: Automation of web Travel stay
+Feature: Automation of web Registry
 
   @smoke
-  Scenario Outline: Enter the website and fill in the form
+  Scenario Outline: The user wants to create an account
     Given the user wishes to create an account on the website
     When The user enters his credentials
       | user    | pass       |

@@ -1,7 +1,7 @@
 Feature: Automation of web Travel stay
 
   @smoke
-  Scenario Outline: Enter the website and fill in the form
+  Scenario Outline: the traveler is looking for a travel sta
     Given the user wishes to create an account on the website
     When the users are searching for places in <stays>
     Then The user visualizes <stays> in search
@@ -9,4 +9,3 @@ Feature: Automation of web Travel stay
       | stays          |
       | "Medellín"     |
       | "Buenos Aires" |
-      | "Providencia"  |

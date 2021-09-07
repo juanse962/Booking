@@ -3,7 +3,10 @@ package stepdefenitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
+import question.AnswerLocation;
+import question.AnswerRegistry;
 import tasks.Car;
 import tasks.Discover;
 
@@ -17,6 +20,6 @@ public class StepDefinitionCarRentals {
 
     @Then("The user visualizes the search")
     public void the_user_visualizes_the_search() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerLocation.toThe()));
     }
 }
