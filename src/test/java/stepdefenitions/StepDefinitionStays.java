@@ -25,7 +25,7 @@ public class StepDefinitionStays {
         OnStage.theActor("User").wasAbleTo(OpenTask.theHomePage());
     }
 
-    @When("thu users are searching for places in {string}")
+    @When("the users are searching for places in {string}")
     public void thu_users_are_searching_for_places_in(String travel) {
         OnStage.theActorInTheSpotlight().attemptsTo(Stays.inPage(travel));
     }

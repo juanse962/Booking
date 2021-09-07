@@ -9,11 +9,11 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         glue = {"stepdefenitions"},
-        features = {"src/test/resources/features/shoppingcar.feature"},
-        plugin = {"pretty", "html:target/cucumber", "json:target/RunnerTestShoppingCar.json"},
+        features = {"src/test/resources/features/carrentals.feature"},
+        plugin = {"pretty", "html:target/cucumber", "json:target/RunnerTestCarRentals.json"},
         tags = "@smoke",
         snippets = SnippetType.UNDERSCORE
 )
-public class RunnerTestShoppingCar {
+public class RunnerTestCarRentals {
 }
 

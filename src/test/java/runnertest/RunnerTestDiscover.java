@@ -9,11 +9,11 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         glue = {"stepdefenitions"},
-        features = {"src/test/resources/features/stays.feature"},
-        plugin = {"pretty", "html:target/cucumber", "json:target/RunerTestStays.json"},
+        features = {"src/test/resources/features/discover.feature"},
+        plugin = {"pretty", "html:target/cucumber", "json:target/RunnerTestDiscover.json"},
         tags = "@smoke",
         snippets = SnippetType.UNDERSCORE
 )
-public class RunerTestStays {
+public class RunnerTestDiscover {
 }
 
