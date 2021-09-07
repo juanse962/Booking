@@ -3,10 +3,12 @@ Feature: Automation of web Travel stay
   @smoke
   Scenario Outline: Enter the website and fill in the form
     Given the user wishes to create an account on the website
-    When the users are searching for places in <stays>
-    Then The user visualizes <stays> in search
+    When The user enters his credentials
+      | user    | pass       |
+      | <email> | <password> |
+    Then The user is successfully registered
     Examples:
-      | stays          |
-      | "Medellín"     |
-      | "Buenos Aires" |
-      | "Providencia"  |
+      | email  | password   |
+      | juan   | 1234Abcdef |
+      | camilo | 1234Abcdef |
+      | pedro  | 1234Abcdef |
