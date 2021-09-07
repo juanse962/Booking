@@ -7,4 +7,6 @@ gradle build
 gradle test aggregate
 ```
 
-
+| ID | Escenario de prueba |
+| ------------- | ------------- |
+| 01 | Creación de viajes con fechas de inicio y salida iguales |
