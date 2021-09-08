@@ -6,9 +6,7 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import question.AnswerLocation;
-import question.AnswerRegistry;
 import tasks.Car;
-import tasks.Discover;
 
 
 public class StepDefinitionCarRentals {

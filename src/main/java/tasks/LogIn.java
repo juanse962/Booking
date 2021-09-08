@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 import static userinterface.SignInManagement.*;
 
-public class SignIn implements Task {
+public class LogIn implements Task {
 
     private final String user;
     private final String password;
@@ -18,20 +18,20 @@ public class SignIn implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Click.on(SIGN_IN),
+                Click.on(SIGN_IN).afterWaitingUntilEnabled(),
                 Enter.theValue(user).into(INPUT_USERNAME),
-                Click.on(CONTINUE_BUTTON),
+                Click.on(CONTINUE_BUTTON).afterWaitingUntilEnabled(),
                 Enter.theValue(password).into(INPUT_PASSWORD),
-                Click.on(SIGN_IN_BUTTON)
+                Click.on(SIGN_IN_BUTTON).afterWaitingUntilEnabled()
         );
     }
 
-    public SignIn(String user, String password) {
+    public LogIn(String user, String password) {
         this.user = user;
         this.password = password;
     }
 
-    public static SignIn inPage(String user, String password) {
-        return Tasks.instrumented(SignIn.class, user, password);
+    public static LogIn inPage(String user, String password) {
+        return Tasks.instrumented(LogIn.class, user, password);
     }
 }

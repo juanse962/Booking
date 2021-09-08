@@ -6,6 +6,7 @@
 gradle build
 gradle test aggregate
 ```
+## Escenarios de pruebas manuales
 
 | ID | Escenario de prueba |
 | ------------- | ------------- |
