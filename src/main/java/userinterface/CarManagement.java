@@ -15,6 +15,6 @@ public class CarManagement {
     public static final Target START_DAY = Target.the("Selecciona el dia de inicio")
             .locatedBy("//form[@id='frm']/div[2]/div[3]//div[2]/div//div/div[2]/div[2]/div[3]/div/div/div[1]//tr[4]/td[2]");
   public static final Target LOCATION = Target.the("VIusaliza la localización en el mapa")
-            .locatedBy("//div[@id='map_location']");
+            .locatedBy("//p[@class='bui-f-font-headline_2']");
 
 }
