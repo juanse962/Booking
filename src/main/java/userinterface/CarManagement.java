@@ -9,12 +9,14 @@ public class CarManagement {
     public static final Target INPUT_LOCATION = Target.the("Ingresa al input de la locacción")
             .locatedBy("//input[@id='ss_origin']");
     public static final Target CALENDAR = Target.the("Hace click en calendario")
-            .locatedBy("//form[@id='frm']/div[2]/div[3]//div[2]/div/div/div/div[1]//button");
+            .locatedBy("//div[@data-mode='checkin']//button[@role='button']");
     public static final Target LIST_LOCATION = Target.the("Selecciona la locacion")
             .locatedBy("//form[@id='frm']/div[2]/div[1]//div[1]/ul[1]/li");
     public static final Target START_DAY = Target.the("Selecciona el dia de inicio")
-            .locatedBy("//form[@id='frm']/div[2]/div[3]//div[2]/div//div/div[2]/div[2]/div[3]/div/div/div[1]//tr[4]/td[2]");
-  public static final Target LOCATION = Target.the("VIusaliza la localización en el mapa")
+            .locatedBy("//div[2][@class='xp__input-group xp__date-time']//div[2][@class='c2-month']//span[text()='20']");
+    public static final Target LOCATION = Target.the("VIusaliza la localización en el mapa")
             .locatedBy("//p[@class='bui-f-font-headline_2']");
+    public static final Target LOCATION_MAP = Target.the("VIusaliza la localización en el mapa")
+            .locatedBy("//div[@id='map_location']");
 
 }
